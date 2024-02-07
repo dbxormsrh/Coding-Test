@@ -1,11 +1,15 @@
 from itertools import permutations
 
 def solution(numbers):
-    for i in numbers:
-        if i<0:
-            return "negative number in parameter"
+    str_num = list(map(str, numbers))
+    
 
-    return str(sorted(list(map(''.join,permutations(list(map(lambda x: str(x), numbers))))), reverse=True)[0])
+    while len(str_num):
+        n = 9
+
+        print(len(str_num))
+        str_num.pop()
+    return max(list(map(''.join,permutations(list(map(str, numbers))))))
 
 if __name__ =="__main__":
     numbers = [3, 30, 34, 5, 9]
