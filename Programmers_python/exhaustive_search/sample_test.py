@@ -41,3 +41,4 @@ def solution(answer):
 if __name__ == "__main__":
     print(solution([1,2,3,4,5]))
     print(solution([1,3,2,4,2]))
+    print(solution([1,1,1,5,1,1,3,3,2,5]))
